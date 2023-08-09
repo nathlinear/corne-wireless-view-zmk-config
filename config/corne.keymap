@@ -9,10 +9,11 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define COLEMAK 0
-#define QWERTY  1
-#define LOWER   2
-#define RAISE   3
-#define FUNCT   4
+#define GAMING  1
+#define QWERTY  2
+#define LOWER   3
+#define RAISE   4
+#define FUNCT   5
 
 &mt {
     tapping-term-ms = <130>;
@@ -61,16 +62,16 @@
   &kp ESC  &kp Q  &kp W     &kp F  &kp P      &kp G      &kp J  &kp L      &kp U    &kp Y  &kp SEMI  &kp BSPC
     &atab  &kp A  &kp R     &kp S  &kp T      &kp D      &kp H  &kp N      &kp E    &kp I     &kp O   &kp SQT
 &kp LSHFT  &kp Z  &kp X     &kp C  &kp V      &kp B      &kp K  &kp M  &kp COMMA  &kp DOT  &kp FSLH   &kp TAB
-                         &kp LALT  &mo 3  &kp SPACE    &kp RET  &mo 4   &kp RGUI
+                         &kp LALT  &mo LOWER  &kp SPACE    &kp RET  &mo RAISE   &kp RGUI
             >;
         };
 
         gaming {
             bindings = <
-&kp SPACE  &trans  &trans  &trans  &trans     &trans          &kp ESCAPE    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5
-   &trans  &trans  &trans  &trans  &trans      &to 0             &kp TAB           &kp Q         &kp W         &kp E         &kp R         &kp T
-&kp SPACE  &trans  &trans  &trans  &trans     &trans           &kp LCTRL           &kp A         &kp S         &kp D         &kp F         &kp G
-                           &trans  &trans  &kp SPACE    &kp LEFT_CONTROL  &kp LEFT_SHIFT         &kp V
+&kp SPACE  &none  &none  &none  &none     &none          &kp ESCAPE    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5
+   &none  &none  &none  &none  &none      &to COLEMAK             &kp TAB           &kp Q         &kp W         &kp E         &kp R         &kp T
+&kp SPACE  &none  &none  &none  &none     &none           &kp LCTRL           &kp A         &kp S         &kp D         &kp F         &kp G
+                           &none  &none  &kp SPACE    &kp LEFT_CONTROL  &kp LEFT_SHIFT         &kp V
             >;
 
             label = "Gaming";
@@ -88,7 +89,7 @@
 &trans  &kp Q  &kp W     &kp E  &kp R      &kp T      &kp Y  &kp U      &kp I    &kp O     &kp P  &kp BSPC
 &trans  &kp A  &kp S     &kp D  &kp F      &kp G      &kp H  &kp J      &kp K    &kp L  &kp SEMI   &kp SQT
 &trans  &kp Z  &kp X     &kp C  &kp V      &kp B      &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH   &kp TAB
-                      &kp LALT  &mo 3  &kp SPACE    &kp RET  &mo 4   &kp RGUI
+                      &kp LALT  &mo LOWER  &kp SPACE    &kp RET  &mo RAISE   &kp RGUI
             >;
         };
 
