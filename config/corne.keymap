@@ -9,11 +9,10 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define COLEMAK 0
-#define GAMING  1
-#define QWERTY  2
-#define LOWER   3
-#define RAISE   4
-#define FUNCT   5
+#define QWERTY  1
+#define LOWER   2
+#define RAISE   3
+#define FUNCT   4
 
 &mt {
     tapping-term-ms = <130>;
@@ -64,17 +63,6 @@
 &kp LSHFT  &kp Z  &kp X     &kp C  &kp V      &kp B      &kp K  &kp M  &kp COMMA  &kp DOT  &kp FSLH   &kp TAB
                          &kp LALT  &mo LOWER  &kp SPACE    &kp RET  &mo RAISE   &kp RGUI
             >;
-        };
-
-        gaming {
-            bindings = <
-&kp SPACE  &none  &none  &none  &none     &none          &kp ESCAPE    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5
-   &none  &none  &none  &none  &none      &to COLEMAK             &kp TAB           &kp Q         &kp W         &kp E         &kp R         &kp T
-&kp SPACE  &none  &none  &none  &none     &none           &kp LCTRL           &kp A         &kp S         &kp D         &kp F         &kp G
-                           &none  &none  &kp SPACE    &kp LEFT_CONTROL  &kp LEFT_SHIFT         &kp V
-            >;
-
-            label = "Gaming";
         };
 
         qwerty_layer {
@@ -135,7 +123,7 @@
             label = "Func";
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp F6     &kp F7  &kp F8  &kp F9  &kp F10  &kp F11            &kp F12
-&trans  &trans  &trans  &trans  &trans      &to 2      &to 0   &to 1  &trans   &trans   &trans    &kp C_VOLUME_UP
+&trans  &trans  &trans  &trans  &trans      &to QWERTY      &to COLEMAK  &trans  &trans   &trans   &trans    &kp C_VOLUME_UP
 &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans   &trans   &trans  &kp C_VOLUME_DOWN
                         &trans  &trans  &kp SPACE    &kp RET  &trans  &trans
             >;
