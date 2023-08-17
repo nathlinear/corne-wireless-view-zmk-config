@@ -50,15 +50,15 @@
             // ------------------------------------------------------------------------------------
             // | ESC        |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L  |  U  |  Y  |  ;  | TAB |
             // | CTRL (TAB) |  A  |  R  |  S  |  T  |  D  |   |  H  |  N  |  E  |  I  |  O  |  '  |
-            // | SHFT       |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M  |  ,  |  .  |  /  | ENT |
-            //                          | ALT | LWR | SPC |   | BKS | RSE | GUI |
+            // | SHFT       |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M  |  ,  |  .  |  /  | GUI |
+            //                          | ALT | LWR | SPC |   | BKS | RSE | ENT |
 
             label = "Colemak";
             bindings = <
-  &kp ESC  &kp Q  &kp W     &kp F      &kp P      &kp G       &kp J          &kp L      &kp U    &kp Y  &kp SEMI  &kp TAB
-    &atab  &kp A  &kp R     &kp S      &kp T      &kp D       &kp H          &kp N      &kp E    &kp I     &kp O  &kp SQT
-&kp LSHFT  &kp Z  &kp X     &kp C      &kp V      &kp B       &kp K          &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RET
-                         &kp LALT  &mo LOWER  &kp SPACE    &kp BSPC  &lt RAISE RET   &kp RGUI
+  &kp ESC  &kp Q  &kp W     &kp F      &kp P      &kp G       &kp J          &kp L      &kp U    &kp Y  &kp SEMI   &kp TAB
+    &atab  &kp A  &kp R     &kp S      &kp T      &kp D       &kp H          &kp N      &kp E    &kp I     &kp O   &kp SQT
+&kp LSHFT  &kp Z  &kp X     &kp C      &kp V      &kp B       &kp K          &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RGUI
+                         &kp LALT  &mo LOWER  &kp SPACE    &kp BSPC  &lt RAISE RET    &kp RET
             >;
         };
 
