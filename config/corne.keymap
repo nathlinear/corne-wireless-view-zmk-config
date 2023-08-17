@@ -35,6 +35,14 @@
             mods = <(MOD_LALT)>;
             keep-mods = <(MOD_LALT)>;
         };
+    mo_tap: mo_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "mo_tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&kp>;
+        };
     };
 
     conditional_layers {
@@ -58,10 +66,10 @@
 
             label = "Colemak";
             bindings = <
-  &kp ESC  &kp Q  &kp W     &kp F      &kp P      &kp G       &kp J      &kp L      &kp U    &kp Y  &kp SEMI   &kp TAB
-    &atab  &kp A  &kp R     &kp S      &kp T      &kp D       &kp H      &kp N      &kp E    &kp I     &kp O   &kp SQT
-&kp LSHFT  &kp Z  &kp X     &kp C      &kp V      &kp B       &kp K      &kp M  &kp COMMA  &kp DOT  &kp FSLH   &kp RET
-                         &kp LALT  &mo LOWER  &kp SPACE    &kp BSPC  &mo RAISE   &kp RGUI
+  &kp ESC  &kp Q  &kp W     &kp F              &kp P      &kp G       &kp J      &kp L      &kp U    &kp Y  &kp SEMI   &kp TAB
+    &atab  &kp A  &kp R     &kp S              &kp T      &kp D       &kp H      &kp N      &kp E    &kp I     &kp O   &kp SQT
+&kp LSHFT  &kp Z  &kp X     &kp C              &kp V      &kp B       &kp K      &kp M  &kp COMMA  &kp DOT  &kp FSLH   &kp RET
+                         &kp LALT  &mo_tap LOWER TAB  &kp SPACE    &kp BSPC  &mo RAISE   &kp RGUI
             >;
         };
 
