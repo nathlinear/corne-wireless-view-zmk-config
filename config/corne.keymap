@@ -15,11 +15,7 @@
 #define FUNCT   4
 
 &mt {
-    tapping-term-ms = <130>;
-};
-
-&sl {
-    release-after-ms = <350>;
+    tapping-term-ms = <200>;
 };
 
 / {
@@ -29,7 +25,7 @@
             label = "ALT_TAB";
             #binding-cells = <0>;
             bindings =
-                <&kp LCTRL>,
+                <&mt LCTRL TAB>,
                 <&kp TAB>;
 
             mods = <(MOD_LALT)>;
