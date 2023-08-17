@@ -55,10 +55,10 @@
 
             label = "Colemak";
             bindings = <
-  &kp ESC  &kp Q  &kp W     &kp F          &kp P      &kp G       &kp J          &kp L      &kp U    &kp Y  &kp SEMI  &kp TAB
-    &atab  &kp A  &kp R     &kp S          &kp T      &kp D       &kp H          &kp N      &kp E    &kp I     &kp O  &kp SQT
-&kp LSHFT  &kp Z  &kp X     &kp C          &kp V      &kp B       &kp K          &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RET
-                         &kp LALT  &lt LOWER TAB  &kp SPACE    &kp BSPC  &lt RAISE RET   &kp RGUI
+  &kp ESC  &kp Q  &kp W     &kp F      &kp P      &kp G       &kp J          &kp L      &kp U    &kp Y  &kp SEMI  &kp TAB
+    &atab  &kp A  &kp R     &kp S      &kp T      &kp D       &kp H          &kp N      &kp E    &kp I     &kp O  &kp SQT
+&kp LSHFT  &kp Z  &kp X     &kp C      &kp V      &kp B       &kp K          &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RET
+                         &kp LALT  &mo LOWER  &kp SPACE    &kp BSPC  &lt RAISE RET   &kp RGUI
             >;
         };
 
