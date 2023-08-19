@@ -55,10 +55,10 @@
 
             label = "Colemak";
             bindings = <
-  &kp ESC  &kp Q  &kp W     &kp F      &kp P      &kp G       &kp J          &kp L      &kp U    &kp Y  &kp SEMI  &kp TAB
-    &atab  &kp A  &kp R     &kp S      &kp T      &kp D       &kp H          &kp N      &kp E    &kp I     &kp O  &kp SQT
-&kp LSHFT  &kp Z  &kp X     &kp C      &kp V      &kp B       &kp K          &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RET
-                         &kp LALT  &mo LOWER  &kp SPACE    &kp BSPC  &lt RAISE RET   &kp RGUI
+  &kp ESC  &kp Q  &kp W     &kp F      &kp P      &kp G       &kp J      &kp L      &kp U    &kp Y  &kp SEMI  &kp TAB
+    &atab  &kp A  &kp R     &kp S      &kp T      &kp D       &kp H      &kp N      &kp E    &kp I     &kp O  &kp SQT
+&kp LSHFT  &kp Z  &kp X     &kp C      &kp V      &kp B       &kp K      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RET
+                         &kp LALT  &mo LOWER  &kp SPACE    &kp BSPC  &mo RAISE   &kp RGUI
             >;
         };
 
@@ -104,8 +104,8 @@
             label = "Lower";
             bindings = <
 &trans   &kp N1     &kp N2     &kp N3   &kp N4    &kp N5      &kp N6     &kp N7     &kp N8     &kp N9  &kp N0  &kp BSPC
-&trans  &kp TAB  &kp TILDE  &kp MINUS  &kp DEL  &kp BSPC    &kp LEFT   &kp DOWN     &kp UP  &kp RIGHT  &trans    &trans
-&trans   &trans     &trans     &trans  &kp RET    &trans    &kp HOME  &kp PG_DN  &kp PG_UP    &kp END  &trans    &trans
+&trans  &kp TAB  &kp TILDE  &kp MINUS  &kp DEL  &kp BSPC    &kp LEFT   &kp DOWN     &kp UP  &kp RIGHT   &none    &trans
+&trans   &trans     &trans     &trans  &kp RET    &trans    &kp HOME  &kp PG_DN  &kp PG_UP    &kp END   &none    &trans
                                &trans   &trans    &trans      &trans     &trans     &trans
             >;
         };
