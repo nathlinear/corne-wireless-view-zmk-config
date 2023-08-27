@@ -32,6 +32,18 @@
             mods = <(MOD_LALT)>;
             keep-mods = <(MOD_LALT)>;
         };
+
+        gatab: gaming_alt_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GAMING_ALT_TAB";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LCTRL>,
+                <&kp TAB>;
+
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
     };
 
     conditional_layers {
@@ -88,7 +100,7 @@
                         label = "Gaming";
             bindings = <
    &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+   &gatab  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
    &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                            &trans  &trans  &trans    &trans  &trans  &trans
             >;
