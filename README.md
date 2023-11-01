@@ -52,10 +52,11 @@ Contains symbols
 ```
 
 Press both LOWER and RAISE to activate layer. Contains function keys,
-bluetooth control, volume control, and default keymap control. Note: the
-gaming layer is toggle-based and works for both COLEMAK and QWERTY. It only
-changes the tab behavior. If you are tapping ctrl but tab is not being sent,
-try toggling the gaming layer to see if it was previously enabled.
+bluetooth control, volume control, and default keymap control.
+
+_Note: the gaming layer is toggle-based and works for both COLEMAK and QWERTY.
+It only changes the tab behavior. If you are tapping ctrl but tab is not being
+sent, try toggling the gaming layer to see if it was previously enabled._
 ```
   function_layer {
       // ---------------------------------------------------------------------------------------------------
