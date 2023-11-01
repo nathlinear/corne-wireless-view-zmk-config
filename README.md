@@ -1,6 +1,6 @@
-// Tap ctrl for tab. Hold and it will hold ctrl, but after a delay. Use gaming
-// mode for immediate ctrl. Alt-tabbing has no delay and always assumes the
-// button is tab.
+Tap ctrl for tab. Hold and it will hold ctrl, but after a delay. Use gaming
+mode for immediate ctrl. Alt-tabbing has no delay and always assumes the
+button is tab.
 ```
   colemak_layer {
     // ------------------------------------------------------------------------------------
@@ -19,8 +19,8 @@
       //                   |     |     |     |   |     |     |     |
 ```
 
-// Makes ctrl work immediately, but tapping it for tab does not work.
-// Alt-tabbing, however, still functions normally
+Makes ctrl work immediately, but tapping it for tab does not work.
+Alt-tabbing, however, still functions normally
 ```
   gaming_layer {
       // ------------------------------------------------------------------------------
@@ -30,8 +30,8 @@
       //                    |     |     |     |   |     |     |     |
 ```
 
-// Contains a dedicated Tab key, number keys, arrow keys, some navigation, and
-// common text editing commands (backspace, delete, and enter on left hand)
+Contains a dedicated Tab key, number keys, arrow keys, some navigation, and
+common text editing commands (backspace, delete, and enter on left hand)
 ```
   lower_layer {
       // ---------------------------------------------------------------------------------
@@ -41,7 +41,7 @@
       //                   |     |     |     |   |      |      |      |
 ```
 
-// Contains symbols
+Contains symbols
 ```
   raise_layer {
       // -----------------------------------------------------------------------------
@@ -51,11 +51,11 @@
       //                   |     |     |     |   |     |     |     |
 ```
 
-// Press both LOWER and RAISE to activate layer. Contains function keys,
-// bluetooth control, volume control, and default keymap control. Note: the
-// gaming layer is toggle-based and works for both COLEMAK and QWERTY. It only
-// changes the tab behavior. If you are tapping ctrl but tab is not being sent,
-// try toggling the gaming layer to see if it was previously enabled.
+Press both LOWER and RAISE to activate layer. Contains function keys,
+bluetooth control, volume control, and default keymap control. Note: the
+gaming layer is toggle-based and works for both COLEMAK and QWERTY. It only
+changes the tab behavior. If you are tapping ctrl but tab is not being sent,
+try toggling the gaming layer to see if it was previously enabled.
 ```
   function_layer {
       // ---------------------------------------------------------------------------------------------------
